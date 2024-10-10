@@ -7,7 +7,7 @@
 
 
 let randomNumber: number = 0
-let score: number = 0
+let score = 0
 
 randomNumber = -1
 basic.clearScreen()
@@ -38,5 +38,6 @@ input.onButtonPressed(Button.A, function() {
 })
 
 input.onButtonPressed(Button.B, function() {
-    basic.showString("Score:" + score .toString)
+    basic.showString("Score:")
+    basic.showNumber(score)
 })
